@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\josep\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.8.0_d39927829cf4794f00580f0d5175a35143137323\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.3.0_a8734fa71307068b226825a47532cfcc0bb26781\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1d4201dd08ce3da8b9b684c295fa338ba0d365e7">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2ebeee4ca539faecfde2b77aa8d7581a8490a23c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.1\19047bdb6a4fc00a44124f64ca98e88fc204e7e3\okhttp-3.3.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.1_a12757ccd10570eb402467e8bd537915b59186c5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.3.0_a2ebb503bc2c6d13780aec68ee305d2c6b79d1c8\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\exploded-aar\me.dm7.barcodescanner\core\1.8.4\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="af8d42f1f020e936b8cd9f5cb6c75993194895a3">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\me.dm7.barcodescanner-core-1.8.4_a2281b73d8aba9ceae48de17432a2d573f012597\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1c6465be6e5298af006452294544a74e467716cf">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_e1dd878ba1f8b8271558909257df3f2982a1f804\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.3.0_0310665f63caced839e63d5a865e75b9dab416fb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.3.0_9078cf728605f3a8a1858183ef273e8c23c5922b\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\1.7.2\112366d8158749e25532ebce162232c6e0fb20a5\gson-1.7.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="112366d8158749e25532ebce162232c6e0fb20a5">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-1.7.2_c2630b0c0cd42070eb074f2a48bdc5a9c578e248\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\exploded-aar\me.dm7.barcodescanner\zxing\1.8.4\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="68ef1daf85c69fca8fddf7bbb947fc51cc9f8ca3">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\me.dm7.barcodescanner-zxing-1.8.4_180bfd7310af2ce6ef3fd395f227ee7e9fbdccfb\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.3.0_48d99c8fc287d45d7a64c6ff371b007aa74a3725\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.2.1\2287494d4f5f9f3a9a2bb6980e3f32053721b315\core-3.2.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2287494d4f5f9f3a9a2bb6980e3f32053721b315">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.2.1_411862bc98424a3fcc94f60b5eb081ef2c342e52\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.5.2_50f0b1186800696961be8e594fc95af810bf441f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\.gradle\caches\modules-2\files-2.1\com.nanohttpd\nanohttpd\2.1.1\82595b0b3190c8bdd988f307346e6edec9c09b72\nanohttpd-2.1.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82595b0b3190c8bdd988f307346e6edec9c09b72">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\nanohttpd-2.1.1_002998fa93c3f258ca54969d4b5c0c4589515c92\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\josep\Desktop\GTI785\Lab 2\QRCode-FileSnatcher\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.3.0_f97de4293193905af93bb25d33fec7856c2e74a3\classes.dex" />
+    </item>
+
+</items>
