@@ -13,6 +13,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
 import fi.iki.elonen.NanoHTTPD;
+import projects.QRCode.service.InternetService;
 
 /**
  * Created by joseph on 2016-07-02.
@@ -20,11 +21,10 @@ import fi.iki.elonen.NanoHTTPD;
 public class Server extends NanoHTTPD {
 
     private static final String MIME_JSON = "application/json";
-    private static final int PORT = 8080;
     private LinkedBlockingQueue blockingQueue = new LinkedBlockingQueue();
 
     public Server() {
-        super(PORT);
+        super(InternetService.PORT);
 
         try {
             start();

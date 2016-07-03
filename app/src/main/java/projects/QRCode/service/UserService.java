@@ -3,8 +3,6 @@ package projects.QRCode.service;
 
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
-import android.net.wifi.WifiInfo;
-import android.net.wifi.WifiManager;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -17,14 +15,9 @@ import projects.QRCode.data.User;
 public class UserService {
 
     public static User getCurrentUser(Context context) {
-        WifiManager wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
-        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
-        int ipAddress = wifiInfo.getIpAddress();
-
         BluetoothAdapter myDevice = BluetoothAdapter.getDefaultAdapter();
-        String deviceName = myDevice.getName();
-
-        return new User(deviceName, String.valueOf(ipAddress), "8080");
+        return new User("test", InternetService.getIP(context),
+                String.valueOf(InternetService.PORT));
     }
 
     public static User fromJson(String json) {
