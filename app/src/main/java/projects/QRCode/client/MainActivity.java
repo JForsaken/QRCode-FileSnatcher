@@ -1,6 +1,7 @@
 package projects.QRCode.client;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,10 +9,10 @@ import android.widget.TextView;
 
 import projects.QRCode.R;
 import projects.QRCode.dal.UserRepository;
-import projects.QRCode.data.User;
 import projects.QRCode.server.Server;
 import projects.QRCode.service.InternetService;
 import projects.QRCode.service.UserService;
+import projects.QRCode.task.LongPollingTask;
 
 public class MainActivity extends AppCompatActivity {
     private Server server;
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
         server = new Server();
         TextView txtIP = (TextView) findViewById(R.id.txtIP);
         txtIP.setText(InternetService.getIP(this));
+
+        AsyncTask task = new LongPollingTask();
+        task.execute();
     }
 
     @Override

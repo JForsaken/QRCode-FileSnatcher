@@ -31,4 +31,10 @@ public class UserService {
         Gson gSon = gsonBuilder.create();
         return gSon.toJson(user);
     }
+
+    public static String toJson(User[] users) {
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        Gson gSon = gsonBuilder.create();
+        return gSon.toJson(users);
+    }
 }
