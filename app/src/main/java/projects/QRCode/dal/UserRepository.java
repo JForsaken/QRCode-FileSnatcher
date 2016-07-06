@@ -23,10 +23,12 @@ public class UserRepository {
         editor = sharedPreferences.edit();
         gsonBuilder = new GsonBuilder();
         gSon = gsonBuilder.create();
+
+        init();
     }
 
     public User[] getAllUser() {
-        String users = sharedPreferences.getString("user", null);
+        String users = sharedPreferences.getString("friends", null);
         User[] userArray = gSon.fromJson(users, User[].class);
         return userArray;
     }
@@ -36,7 +38,8 @@ public class UserRepository {
             User[] userArray = getAllUser();
             userArray[userArray.length] = user;
             String users = gSon.toJson(userArray);
-            editor.putString("user", users);
+            editor.putString("friends", users);
+            editor.commit();
         }
     }
 
@@ -60,5 +63,16 @@ public class UserRepository {
         }
 
         return false;
+    }
+
+    private void init() {
+        String users = sharedPreferences.getString("friends", null);
+
+        if (users == null) {
+            User[] userArray = new User[0];
+            users = gSon.toJson(userArray);
+            editor.putString("friends", users);
+            editor.commit();
+        }
     }
 }

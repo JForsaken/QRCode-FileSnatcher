@@ -9,6 +9,7 @@ import com.google.gson.GsonBuilder;
 import com.squareup.picasso.Picasso;
 
 import projects.QRCode.R;
+import projects.QRCode.service.InternetService;
 import projects.QRCode.service.UserService;
 
 public class QrActivity extends AppCompatActivity {
@@ -24,6 +25,7 @@ public class QrActivity extends AppCompatActivity {
 
     private void generateQRCode() {
         ImageView qrImage = (ImageView) findViewById(R.id.qrImageView);
-        Picasso.with(this).load(URL + UserService.toJson(UserService.getCurrentUser(this))).into(qrImage);
+        String code = UserService.toJson(UserService.getCurrentUser(this));
+        Picasso.with(this).load(URL + code).into(qrImage);
     }
 }

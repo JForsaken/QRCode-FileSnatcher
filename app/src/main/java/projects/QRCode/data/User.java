@@ -42,4 +42,20 @@ public class User {
     public void setOnline(boolean online) {
         this.online = online;
     }
+
+    @Override
+    public String toString() {
+
+        String textOnline;
+
+        if (online) {
+            textOnline = "online";
+        }
+        else {
+            textOnline = "offline";
+        }
+
+        return String.format("%1$s    %2$s", username, textOnline);
+    }
+
 }
