@@ -23,14 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".client.QrActivity">
-
-        </activity>
+        <activity android:name=".client.QrActivity" />
         <activity android:name=".client.ScannerActivity" />
         <activity android:name=".client.ZXingScanner" />
-        <activity android:name=".client.FriendsActivity">
-
-        </activity>
+        <activity android:name=".client.FriendsActivity" />
+        <activity android:name=".client.FriendActivity" />
+        <activity android:name=".client.FilesActivity"></activity>
     </application>
 
 </manifest>
