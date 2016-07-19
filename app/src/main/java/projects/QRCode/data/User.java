@@ -55,7 +55,7 @@ public class User {
             textOnline = "offline";
         }
 
-        return String.format("%1$s    %2$s", username, textOnline);
+        return String.format("%1$s %2$s", username, textOnline);
     }
 
 }

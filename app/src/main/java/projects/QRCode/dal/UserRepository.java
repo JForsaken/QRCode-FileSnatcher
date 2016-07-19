@@ -7,6 +7,9 @@ import android.preference.PreferenceManager;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 import projects.QRCode.data.User;
 
 /**
@@ -34,11 +37,12 @@ public class UserRepository {
     }
 
     public void addUser(User user) {
+
         if (!userExist(user)) {
             User[] userArray = getAllUser();
-            userArray[userArray.length] = user;
-            String users = gSon.toJson(userArray);
-            editor.putString("friends", users);
+            User[] users = Arrays.copyOf(userArray, userArray.length + 1);
+            users[users.length - 1] = user;
+            editor.putString("friends", gSon.toJson(users));
             editor.commit();
         }
     }
@@ -74,5 +78,17 @@ public class UserRepository {
             editor.putString("friends", users);
             editor.commit();
         }
+    }
+
+    public User getUser(String username) {
+        User[] userArray = getAllUser();
+
+        for (int i = 0; i < userArray.length; i++) {
+            if (userArray[i].getUsername().equals(username)) {
+                return userArray[i];
+            }
+        }
+
+        return null;
     }
 }

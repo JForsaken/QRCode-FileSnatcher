@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 
 import fi.iki.elonen.NanoHTTPD;
 import projects.QRCode.dal.UserRepository;
+import projects.QRCode.data.User;
 import projects.QRCode.service.FileService;
 import projects.QRCode.service.InternetService;
 import projects.QRCode.service.UserService;
@@ -77,7 +78,11 @@ public class Server extends NanoHTTPD {
             }
 
             if(Method.POST.equals(method)) {
-                return handlePost(session);
+                return handlePost(session, uri, headers, parms);
+            }
+
+            if (Method.DELETE.equals(method)) {
+                return handleDelete(uri, headers, parms);
             }
 
             throw new Resources.NotFoundException();
@@ -100,6 +105,8 @@ public class Server extends NanoHTTPD {
                 return new NanoHTTPD.Response(Response.Status.OK, MIME_JSON, FileService.toJson(FileService.getFilesNames()));
             case "friends":
                 return new NanoHTTPD.Response(Response.Status.OK, MIME_JSON, UserService.toJson(userRepository.getAllUser()));
+            case "stillalive":
+                break;
         }
 
         /*if (isLongLivedRequest(headers)) {
@@ -118,10 +125,56 @@ public class Server extends NanoHTTPD {
         return new Response(Response.Status.NO_CONTENT, MIME_PLAINTEXT, "");
     }
 
-    private Response handlePost(IHTTPSession session) throws IOException, ResponseException {
+    private Response handlePost(IHTTPSession session, String uri, Map<String, String> headers, Map<String, String> parms) throws IOException, ResponseException {
+        final String action = uri.substring(1).toLowerCase().split("/")[0];
+
+        switch(action) {
+            case "online":
+
+                Integer contentLength = Integer.parseInt(headers.get( "content-length" ));
+                byte[] buf = new byte[contentLength];
+                String username = null;
+
+                try
+                {
+                    session.getInputStream().read( buf, 0, contentLength );
+                    username = new String(buf);
+                }
+                catch(IOException e)
+                {
+                    e.printStackTrace();
+                }
+
+                User user = userRepository.getUser(username);
+                user.setOnline(true);
+                userRepository.updateUser(user);
+
+                return new NanoHTTPD.Response("OK");
+            case "notify":
+
+                //CREER UNE NOTIFICAITON
+
+                break;
+        }
 
         return null;
     }
+
+    private Response handleDelete(String uri, Map<String, String> headers, Map<String, String> parms) throws IOException, ResponseException {
+        final String action = uri.substring(1).toLowerCase().split("/")[0];
+
+        switch(action) {
+            case "notify":
+
+                //CREER UNE NOTIFICAITON
+
+                break;
+        }
+
+        return null;
+    }
+
+
 
     private boolean isLongLivedRequest(Map<String, String> headers) {
         return headers.containsValue("Keep-Alive");
