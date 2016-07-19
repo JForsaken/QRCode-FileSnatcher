@@ -29,11 +29,9 @@ public class FriendActivity extends AppCompatActivity {
     }
 
     public void getFiles(View view) {
-
     }
 
     public void getFriends(View view) {
-
     }
 
 }
